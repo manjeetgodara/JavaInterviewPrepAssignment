@@ -99,5 +99,116 @@ so, it shows that they are different one's as equality operator compare the addr
 object. But, in case of the valueOf() method jvm frequently uses the object space again and again so, that problem 
 does not occur as it is happening in constructor approach. 
 
+Ques 5: What is autoboxing?
+
+sol:- Autoboxing may be defined as the automatic conversion of primitive data type to the wrapper classes.
+And, unboxing means conversion of wrapper class to the primitive data type.
+
+Ques:- 6 What are the advantages of auto-boxing?
+
+sol:-  Autoboxing makes coding more convenient because it saves developers from having to write boilerplate 
+code to convert between primitive data types and their corresponding wrapper classes.And, it also increases the
+readability of the code as well.
+
+Ques:- 7 What is casting?
+
+sol:- Casting means the conversion of one primitive data type to another one. 
+
+Ques:- 8 What is implicit casting?
+
+sol:- Implicit casting means conversion of smaller size data type to larger size data type automtically.It is
+also known as widening. Ex- conversion of int to float or double or long etc.
+
+Ques:- 9 What is explicit casting? 
+
+sol:-Explicit casting means conversion of larger size data type to smaller one. It is also known as type casting
+or narrowing.(it does not happen automatically and also data loss takes place in such casting). Ex-float->int,
+long-> int etc.
+
+Part 3: Strings
+
+Ques:- 1 Are all strings immutable in java?
+
+sol: Yes, all strings are immutable in java. Once ,a string is to be made in java then we can not modify it's 
+content. So, whenever we try to try to modify it then a new object get formed inside the string pool constant area.
+
+Ques:- 2 Advantages of string immutability?
+
+sol:- 1. Thread safety:- Since , strings are immutable so that they can be shared between the threads without worrying
+about race condition.
+2. Security:- As, strings are immutable so it ca not be modified with some malicious code,which helps prevent security
+vulnerabilites.
+3. This thing also reduces the risk of memory leakage and other issues.
+
+Ques :- 3 Where are string values stored in memory?
+
+sol:- Inside spring pool constant area it lies inside the memory heap only.
+
+Ques:- 4 Why should you be careful about String Concatenation(+) operator in Loops?
+
+sol: As, we know that strings are immutable. So , at the time of Concatenation operation a new String object get
+formed with the modified content.(So, making of objects again and again is very costly process).
+
+Ques :- 5 How do you solve the above problem?
+
+sol:- In order to solve the above problem , we can use StringBuilder and StringBuffer classes to create the string
+and these are mutable one's.
+
+Ques:- 6 What are differences between String and StringBuffer?
+
+sol:-Both String and StringBuffer are used to represent and manipulate sequences of characters in Java, but they 
+differ in terms of mutability, performance, and functionality.  
+
+1.Mutability: String objects are immutable, which means their values cannot be changed once they are created. 
+StringBuffer, on the other hand, is mutable, which means that you can modify its value by appending, deleting,
+ or inserting characters.
+2. String objects are thread-safe because they are immutable, but StringBuffer is not thread-safe by default.
+3. Performance: Because String objects are immutable, any operation that modifies the contents of a String (such as concatenation) 
+requires creating a new String object. This can be slow and memory-intensive, especially when working with 
+large strings. StringBuffer, on the other hand, is designed to be more efficient for this kind of manipulation
+ because it can modify the contents of the buffer without creating new objects.
+
+Ques:- 7 What are differences between StringBuilder and StringBuffer?
+
+sol:- Both StringBuilder and StringBuffer are used to represent and manipulate sequences of characters in Java,
+ but they differ in terms of mutability, performance, and synchronization.
+
+Here are the main differences between StringBuilder and StringBuffer:
+
+1.Mutability: StringBuilder and StringBuffer are both mutable, which means that you can modify their values by 
+appending, deleting, or inserting characters. The key difference between them is that StringBuilder is not
+ synchronized, while StringBuffer is synchronized.
+2. Performance: Because StringBuilder and StringBuffer are mutable, they can modify their contents without creating
+ new objects. This makes them more efficient than String for operations that involve a lot of string 
+manipulation. However, StringBuilder is generally faster than StringBuffer because it is not synchronized.
+3. Synchronization: StringBuffer is synchronized, which means that it is thread-safe. This makes it useful in 
+multi-threaded applications where multiple threads might be modifying the same string buffer at the same time. 
+StringBuilder, on the other hand, is not synchronized and is generally faster in single-threaded applications.
+
+Ques:- 8 Can you give examples of different utility methods in String class?
+
+sol:-charAt(int index): Returns the character at the specified index.
+length(): Returns the length of the string.
+substring(int beginIndex): Returns a new string that is a substring of the original string, starting at the 
+specified index.
+substring(int beginIndex, int endIndex): Returns a new string that is a substring of the original string, 
+starting at the specified begin index and ending at the specified end index.
+concat(String str): Concatenates the specified string to the end of the original string.
+equals(Object obj): Compares the original string to the specified object for equality.
+equalsIgnoreCase(String str): Compares the original string to the specified string for equality, ignoring case 
+differences.
+indexOf(int ch): Returns the index within the original string of the first occurrence of the specified 
+character.
+lastIndexOf(int ch): Returns the index within the original string of the last occurrence of the specified
+ character.
+replace(char oldChar, char newChar): Returns a new string that is a copy of the original string with all 
+occurrences of the specified old character replaced by the specified new character.
+startsWith(String prefix): Tests whether the original string starts with the specified prefix.
+endsWith(String suffix): Tests whether the original string ends with the specified suffix.
+toLowerCase(): Converts the original string to lowercase.
+toUpperCase(): Converts the original string to uppercase.
+
+
+
 
 
