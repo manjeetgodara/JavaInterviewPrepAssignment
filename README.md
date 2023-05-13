@@ -208,6 +208,155 @@ endsWith(String suffix): Tests whether the original string ends with the specifi
 toLowerCase(): Converts the original string to lowercase.
 toUpperCase(): Converts the original string to uppercase.
 
+Part 4:OOPs
+
+Ques: 1 What is class?
+sol: class may be defined as the blue-print or template in order to create various objects accordingly.
+
+Ques:2 Which class is super class of all classes in java?
+sol: Object class
+
+Ques: 3 What is behavior of an Object?
+sol: Behaviour of an Object is nothing but the methods in the classes.Basically, Methods are the set of codes
+that perform some tasks.
+
+Ques: 4 Explain about toString method ?
+sol:The toString() method returns the String representation of the object. If you print any object, 
+Java compiler internally invokes the toString() method on the object. So overriding the toString() 
+method, returns the desired output, it can be the state of an object etc. depending on your implementation
+
+Ques: 5 What is the use of equals() methods in java?
+sol:The equals() method compares two strings, and returns true if the strings are equal, and false if not. 
+ Use the compareTo() method to compare two strings lexicographically.
+
+Ques: 6 What is the use of hashcode method in java?
+sol:  The hashCode() method is used to generate the hash values of objects.
+
+Ques: 7 What is the use of hashCode and equals method in Java?
+sol: Equals() and Hashcode() in Java. The equals() and hashcode() are the two important methods provided by the 
+Object class for comparing objects. Since the Object class is the parent class for all Java objects,
+ hence all objects inherit the default implementation of these two methods.
+
+Ques: 8 Is Multiple Inheritance allowed in Java?
+sol: Yes, multiple inheritance allowed in java but only in case of interfaces only.But, for the classes
+it is not applicable.
+
+Ques: 9 Explain inheritance with Examples.
+sol: When one class object inherits some of the properties of the other class object(i.e except private
+methods, constructors, final methods etc can not be inherited) this is known as inheritance.
+
+Ques: 10 What is Method Overloading?
+sol: When mutiple methods with same name but with different parameter list i.e either in terms of sequence
+or data types or number of parameter list inside the same class are declared then this is known as method
+overloading.(It is controlled by the java compiler, and it is achieved by static polymorphism(compile
+time polymorphism)
+
+Ques: 11 What is Method Overriding?
+sol: When multiple methods with same name and same parameter list i.e either in terms of sequence or data
+types or number of parameter list inside the different classes which are having IS-A relationship between
+them.This is known as method overriding.(It is handled by JVM ,and it is achieved by runtime polymorphism,
+also known as dynamic polymorphism)
+
+Ques: 12 Can super class reference variable holds an object of subclass?
+sol: Yes, the super class reference variable can hold the sub class object actually, it is widening in
+ case of objects (Conversion of lower datatype to a higher datatype).
+
+Ques: 13 What is an Interface ?
+sol: Interface may be defined as the blueprint of the class which tells what to do but not how.It is used
+in java to achieve abstraction.
+
+Ques: 14 How do you implement an interface ?
+sol: access modifier interface name{
+  //public abstract methods
+//default concrete methods
+//public static final fields can be there.
+}
+
+Ques: 15 Some tricky things about interfaces?
+sol: An interface cannot contain instance fields. The only fields that can appear in an interface must be 
+declared both static and final. An interface is not extended by a class; it is implemented by a class. An interface can extend multiple interfaces.
+
+Ques: 16 Can you extend an interface ?
+sol: Yes, interface can be extended with other interfaces.
+
+Ques: 17 Can a class implements multiple interfaces ?
+sol: Yes, in case of interfaces multiple inheritance is possible in java.
+
+Ques: 18 What is an Abstract Class ?
+sol: An abstract class is a class which can have abstract methods(methods  without  implementation or body).
+These classes are used for achieving  abstraction in java.
+
+Ques: 19 When do you use an Abstract Class ?
+sol: When we want to achieve abstraction in java(abstraction means to hide the internal implementation 
+and just highlight the setup services that we are offering).
+
+Ques: 20 How do you define an Abstract Method ?
+sol: An abstract method is something which doesn't have the implementation or body.
+
+Ques: 21 Compare Abstract Class vs Interfaces ?
+sol: 1. Abstract class can have abstract methods with any access modifier and other concrete methods as well
+with any access modifier, but in case of interfaces only public abstract methods and default concrete
+methods are allowed.(if we don't provide these keywords in interface then java compiler will put them by own)
+
+2. There is no restriction for fields declared in abstract classes, but in case of interfaces only public
+static final fields are allowed.
+
+3. Both of them can not be instansiated and both of them are used for achieving abstraction in java.
+
+4. For inheritance purpose, in abstract class case extends keyword is to be used and in case of interfaces
+implements keyword is used.
+
+5. When a class  implements any interface then the overriden methods must have the greater accessibility
+or it can be equal to the method defined in interface but it can not be lower, otherwise compilation error will
+be there. But, there is no such restriction at all in case of abstract classes.
+
+Ques:22 What is a Constructor?
+sol: Constructor is a special type of method, which does not have any kind of return type.The main purpose of the
+constructor is to initialize the java object of a class.
+
+Ques: 23 What is default constructor?
+sol: It is one of the type of the constructor in java, which is to be created by java compiler when no 
+constructor is defined inside the class.It is a zero argument constructor and inside the body it consists
+of super keyword only.
+
+Ques: 24 How do you call a Super Class Constructor from a Constructor?
+sol: By use of super();
+
+Ques:25 What is the use of this();
+sol: it is used to call current class constructor.
+
+Ques: 26 Can a constructor be called directly from a method?
+sol: Yes, as mentioned we can call all the members of a class (methods, variables, and constructors) from 
+instance methods or, constructors.
+
+Ques: 27 Difference between compile time and run time polymorphism?
+sol:  Types of Polymorphism
+
+1. compile time polymorphism
+ compile time polymorphism is also known as static polymorphism, from, static polymorphism we can achieve
+ method overloading.  Method overloading is handled by  java compiler
+2.run time polymorphism
+runtime polymorphism is also known as dynamic polymorphism, from runtime polymorphism we 
+can achieve method overriding in java.  Method overriding is controlled by JVM.
+
+For method overloading
+1. same class
+2. same method name
+3. Different arguments like either in terms of number; sequence; type of argument may be differ.
+
+For method overridden
+1. Different  class
+2. same method name
+3. same arguments like either in terms of number; sequence;type of argument may be differ.
+4. IS-A relationship between parent and child class(inheritance)
+
+Ques: 28 Is a super class constructor called even when there is no explicit call from a sub class 
+constructor ?
+sol:If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically 
+inserts a call to the no-argument constructor of the superclass. If the super class does not have a 
+no-argument constructor, you will get a compile-time error.
+
+
 
 
 
