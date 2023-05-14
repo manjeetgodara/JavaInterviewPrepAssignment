@@ -356,6 +356,122 @@ sol:If a constructor does not explicitly invoke a superclass constructor, the Ja
 inserts a call to the no-argument constructor of the superclass. If the super class does not have a 
 no-argument constructor, you will get a compile-time error.
 
+Part: 5 Advanced OOPs
+
+Ques: 1 What is polymorphism?
+sol: Polymorphism means the ability of the message to be displayed in multiple forms.
+
+Ques:2 What is the use of instanceOf operator in java?
+sol: The use of instanceOf operator in java is to check the specified object is an instance of class,
+subclass or an interface.
+
+Ques:3 	What is Encapsulation?
+sol : It may be defined as to wrap up the data(variables) and code acting on the data(methods) in a single
+unit.This is known as Encapsulation.
+In order to achieve encapsulation we have to follow these steps:-
+1. Declare all the variabes with private access modifier this is nothing but data hiding(data hiding means
+to hide the internal sensitive data and just showing the setup services that are required for the user).
+2. Use getter and setter methods in order to view and modify the data.
+
+Ques:4 What is cohesion?
+sol: Cohesion may be defined as the level of logical connections between the methods and attributes are
+to be used in a class.
+In good software design , classes should be loosely coupled with each other.
+
+Ques: 5 What is coupling?
+sol: Coupling may be defined as the level of dependency between the classes of a java program.
+As , per the good software design , classes should be loosely coupled as much as possible.
+
+Ques: 6 What is inner class?
+sol: A class which is to be defined inside another class or interface this is known as inner class.
+ There are various types of inner class:-
+1. Member inner class:- class is to be created inside the class but outside the method.
+2. Local inner class:- class is to be created inside the method of a class.
+3. static inner class:- A static class is to be created inside the another class in java.
+4. Anynomous inner class:- Class which is having no name. This class is to be used to extend some class 
+or implementing an interface.
+5. Nested interface:- An interface is to be created inside a class or an interface.
+
+
+Ques :7 What is a Static Inner Class?
+sol: A static class is to be created inside the another class in java.
+
+Ques : 8 What is an Anonymous Class?
+sol: Class which is having no name. This class is to be used to extend some class 
+or implementing an interface.
+
+Ques :9 Can you create an inner class inside a method?
+sol: Yes , we can create an inner class inside a method.That class is a type of inner class which is
+known as local inner class.
+
+=========================================================
+
+Part 6: Modifiers
+
+Ques 1: What is default class modifier?
+sol: Default class access modifier represents that this class is accessible only inside the package in which
+it is to be defined only,not outside of this package it is accessible.
+
+Ques 2 : What is private access modifier?
+sol: "private" keyword is to be used for private access modifier in java.
+The methods or data members which are to be declared as private are only accessible inside that particular
+class only not outside of it.
+Any other class of same package also, can not access these data members or methods.
+Top level class or interfaces can not be declared as private.
+
+Ques 3 : What is default or package access modifier?
+sol:If no keyword is used with class, data member or method in java then by default they are considered
+to be with default access modifier.
+The methods , class or data members which are to be declared as default are only accessible inside the
+package only. No one access these members outside the package in which they are declared.
+
+Ques 4: What is public access modider?
+sol : "public" keyword is to be used for public access modifier in java.
+The methods or data members or classes which are to declared as public they can be accessible everywhere
+inside the package outside the package i.e there is no restriction of scope at all in that case.
+
+Ques 5: What is protected access modidfier?
+sol: Protected keyword is to be used for protected access modifier in java.
+The methods or data members which are to be declared with protected access modifer in java are accessible
+inside the same package and also inside the sub class of different package.
+
+Protected access modifier is to be used only when inheritance envolvement is to be there.
+
+Ques 6: What access types of variables can be accessed from a Class in Same Package?
+sol: variable wth default access modifier.
+
+Ques 7: What access types of variables can be accessed from a Class in Different Package?
+sol: variable with public access modifier.
+
+Ques 8: What access types of variables can be accessed from a Sub Class in Same Package?
+sol : default or public access modifier both are valid.
+
+Ques 9 : What access types of variables can be accessed from a Sub Class in different Package?
+sol : variables with protected access modifiers.
+
+Ques 10: What is the use of final modifier on the class?
+sol: class with non access modifier final ensure that this class can not be inherited or extended by some 
+other class.
+
+Ques 11: What is the use of a final modifier on a method ?
+sol: method with final modifier can not be overriden from one parent class to the child one.
+
+Ques 12: What is a Final Variable ?
+sol: final variable acts like a constant it will not changed further.
+
+Ques 13:What is a Static Variable ?
+sol: A class level variable is known as static varible and it can be accessed by use of class name only
+no need to create an object. And, inside the memory it will get load in he context area before creation of an
+object and also it having only one copy of it inside the memory so it's value remain same for different 
+objects of a class.
+
+Ques 14 : What is final argument in java?
+sol:  You can pass final variables as the parameters to methods in Java. A final variable can be explicitly 
+initialized only once. A reference variable declared final can never be reassigned to refer to a 
+different object. However, the data within the object can be changed.
+
+
+
 
 
 
